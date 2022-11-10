@@ -13,7 +13,7 @@
 <header class="header">
   <div class="header__container">
     <a href="#" class="header__link"><img src="/img/logo.png" alt="Logotype" class="header__logo"></a>
-    <p class="header__titel">Личный кабинет</p>
+    <p class="header__title">Личный кабинет</p>
   </div>
   <nav class="user-nav">
     <ul class="user-nav__list">
@@ -70,9 +70,48 @@
     </ul>
   </nav>
 </div>
-<main>
-  
+<main class="main">
+  <ul class="breadcrumbs">
+    <li><a class="breadcrumbs__link" href="index.html"><span>Кабинет</span></a></li>
+    <li><a class="breadcrumbs__link" href="main-catalog.html">Крошки облако и тп</a></li>
+  </ul>
+<h1 class="main__title">Создать новый сервер</h1>
+<p class="main__discription">Лид с кратким пояснением того, что здесь происходит. Ну или с объяснением возможностей.Лид с кратким пояснением того, что здесь происходит. Ну или с объяснением возможностей.</p>
+<section class="search-block">
+  <h2 class="search-block__title">Название сервера и зона</h2>
+  <div class="search-block__container">
+    <label for="server-name">Введите название сервера</label>
+    <input type="text" class="search-block__input" id="server-name" placeholder="Test">
+    <label for="zone">Зона</label>
+    <input type="text" class="search-block__input" id="zone" placeholder="ALA">
+  </div>
+</section>
 
+<section class="resources">
+  <h2 class="resources__title">Ресурсы</h2>
+  <ul class="resourse-nav">
+    <li class="resourse-nav__item"><button class="resource-nav__button">Standard Line</button></li>
+    <li class="resourse-nav__item"><button class="resource-nav__button">CPU Line</button></li>
+    <li class="resourse-nav__item"><button class="resource-nav__button">Memory Line</button></li>
+    <li class="resourse-nav__item"><button class="resource-nav__button">Произвольная конфигурация</button></li>
+    <li class="resourse-nav__item"><button class="resource-nav__button">Мои конфигурации</button></li>
+  </ul>
+
+  <div class="recources-container">
+    <div class="recourcers-container__item">1 CPU / 2 GB RAM</div>
+    <div class="recourcers-container__item">1 CPU / 3 GB RAM</div>
+    <div class="recourcers-container__item">1 CPU / 4 GB RAM</div>
+    <div class="recourcers-container__item">2 CPU / 1 GB RAM</div>
+    <div class="recourcers-container__item">2 CPU / 2 GB RAM</div>
+    <div class="recourcers-container__item">2 CPU / 3 GB RAM</div>
+    <div class="recourcers-container__item">2 CPU / 4 GB RAM</div>
+    <div class="recourcers-container__item">2 CPU / 6 GB RAM</div>
+    <div class="recourcers-container__item">2 CPU / 8 GB RAM</div>
+    <div class="recourcers-container__item">4 CPU / 16 GB RAM</div>
+    <div class="recourcers-container__item">4 CPU / 24 GB RAM</div>
+    <div class="recourcers-container__item">10 CPU / 10 GB RAM</div>
+  </div>
+</section>
 
 </main>
 
