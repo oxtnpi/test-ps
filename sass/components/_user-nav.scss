@@ -8,10 +8,10 @@
   }
 
   &__item {
+    margin-top: 1rem;
     display: flex;
-    align-self: center;
+    align-items: center;
     justify-content: end;
-   
   }
 
   &__link:link,
@@ -21,7 +21,8 @@
     grid-template-columns: 50px 1fr;
     font-size: $font-size-smallest;
     text-decoration: none;
-    
+    line-height: 1;
+    align-self: center;
   }
 
   &__img {
@@ -34,10 +35,11 @@
   &__name {
     color: $color-primary-font;
     align-self: center;
+    
   }
 
   &__discription {
     color: $color-secondary-font;
-    align-self: start;
+    align-self: center;
   }
 }
