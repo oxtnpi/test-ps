@@ -1,0 +1,106 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box;
+  background-color: #ccc; }
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.7; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-bottom-big {
+      margin-bottom: 5rem !important; } }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 3rem !important; } }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
+.user-nav {
+  grid-column: 7/-1; }
+  .user-nav__list {
+    display: grid;
+    grid-template-columns: repeat(2, 200px) 100px;
+    list-style: none;
+    justify-content: end; }
+  .user-nav__item {
+    display: flex;
+    align-self: center;
+    justify-content: end; }
+  .user-nav__link:link, .user-nav__link:visited {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 50px 1fr;
+    font-size: 1.2rem;
+    text-decoration: none; }
+  .user-nav__img {
+    grid-row: 1 / -1;
+    align-self: center;
+    width: 30px;
+    height: 30px; }
+  .user-nav__name {
+    color: #22232b;
+    align-self: center; }
+  .user-nav__discription {
+    color: #828d92;
+    align-self: start; }
+
+.header {
+  width: 100vw;
+  height: 55px;
+  z-index: 3;
+  display: grid;
+  grid-template-rows: 55px;
+  grid-template-columns: repeat(10, 1fr);
+  background-color: #fff; }
+  .header__container {
+    grid-column: 1/ 7;
+    display: grid;
+    margin: 10px;
+    grid-template-columns: 40px 70px 1fr; }
+  .header__title {
+    font-size: 1.2rem;
+    font-family: "Open Sans";
+    color: #22232b;
+    font-weight: 700;
+    line-height: 1;
+    text-align: left;
+    margin: 0 1rem;
+    align-self: center; }
+
+.main {
+  height: 85vh; }

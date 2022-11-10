@@ -1,0 +1,43 @@
+.user-nav {
+    grid-column: 7/-1;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2,200px) 100px;
+    list-style: none;
+    justify-content: end;
+  }
+
+  &__item {
+    display: flex;
+    align-self: center;
+    justify-content: end;
+   
+  }
+
+  &__link:link,
+  &__link:visited {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 50px 1fr;
+    font-size: $font-size-smallest;
+    text-decoration: none;
+    
+  }
+
+  &__img {
+    grid-row: 1 / -1;
+    align-self: center;
+    width: 30px;
+    height: 30px;
+  }
+
+  &__name {
+    color: $color-primary-font;
+    align-self: center;
+  }
+
+  &__discription {
+    color: $color-secondary-font;
+    align-self: start;
+  }
+}

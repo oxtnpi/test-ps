@@ -1,0 +1,29 @@
+.header {
+  width: 100vw;
+  height: 55px;
+  z-index: 3;
+  display: grid;
+  grid-template-rows: 55px;
+  grid-template-columns: repeat(10,1fr);
+  background-color: $color-white;
+
+  &__container {
+    grid-column: 1/ 7 ;
+    display: grid;
+    margin: 10px;
+    grid-template-columns: 40px 70px 1fr;
+  }
+
+  &__title {
+    font-size: $font-size-smallest;
+    font-family: "Open Sans";
+    color: $color-primary-font;
+    font-weight: 700;
+    line-height: 1;
+    text-align: left;
+    margin: 0 1rem;
+    align-self: center;
+  }
+
+  
+}
