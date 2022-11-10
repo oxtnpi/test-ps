@@ -1,0 +1,10 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-dots" viewBox="0 0 20 20">
+<image  x="0px" y="0px" width="20px" height="20px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfmCwoWHRDu1CDwAAAAKklEQVQoz2P8/58BAhihNA4+EwORgPoKGf8TqXAA3cjCMBqO1FA4FMIRAOxODCR7vVUDAAAAAElFTkSuQmCC" />
+</symbol>
+<symbol id="icon-home" viewBox="0 0 20 20">
+<image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfmCwoWOSOg7KBAAAAA50lEQVQoz42RvUoDQRRGD4uQFFoGlBQWdsKqsF1Asbe0t7WzEUkR8AEkoJ0P4HOE6CtYaGOVQnRjE5CANscm6/4yyTfN3DuH+12+QSpn6KeptyKOnfrkukgVezDTjdHidlAH7yzq0Q9V96rgwGbFZfBcVwFPS0+pw0K1mYPHFSwWL//rkwzcb8Cw4/uiM3dXcNvvRuy50J3ZxdelmOoLK2FqRJ8ZP4Q054srxA0PgzOPbGfxdIP2O3mOcTCeRCSqbdRhRAycsVXq1ybWvzDJrRND6uXW02A8KcAaABOuuaDVAP1yzxvAH6kWCZZdbiecAAAAAElFTkSuQmCC" width="20" height="20"/>
+</symbol>
+</defs>
+</svg>
