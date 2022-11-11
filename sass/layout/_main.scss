@@ -3,8 +3,8 @@
     height: 85vh;
     padding-top: 20px;
     display: grid;
-    grid-template-columns: repeat(10,1fr);
-    grid-template-rows: repeat(10,1fr);
+    grid-template-columns: 80px repeat(4,1fr);
+    grid-template-rows: 40px repeat(10,1fr);
 
     &__title{
         grid-row: 2/3;
@@ -17,6 +17,8 @@
 
     &__discription{
         grid-row: 3/4;
-        grid-column: 2/6;
+        grid-column: 2/5;
+        font-size:$font-size-normal;
+        line-height: 1.333;
     }
 }
