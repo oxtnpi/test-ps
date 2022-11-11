@@ -5,24 +5,24 @@
     const containerClass = 'resources-container__item';
     const containers = document.querySelectorAll(".resources-container__item");
     
-    const makeActive = (button, btnClass) => {
-        btnClass = btnClass + "--active";
-        if(button.classList.contains(btnClass)){
-            button.classList.remove(btnClass);
-        } else {
-            button.classList.add(btnClass);
-        }
-    }
-    
+   
     const getActiveElement = (arr,elClass) =>{
+       let btnClass = elClass + "--active";
+       
         arr.forEach(el=>{
-            el.target.addEventListener('click',makeActive(el,elClass))
+           el.addEventListener('click', (event) => {
+            arr.forEach(item=> item.classList.remove(btnClass))
+                if (event.target.checked) {
+                    el.classList.add(btnClass);
+                  }})
+                  
         }
-            )
+    ) 
     }
     
     getActiveElement(buttons,buttonClass);
-    getActiveElement(containers ,containerClass);
+    getActiveElement(containers,containerClass)
+    
 
    
 })();
