@@ -35,12 +35,13 @@
     &__span{
         display: block;
         position: absolute;
-        top: -1rem;
-        left: 1rem;
+        top: -10px;
+        left: 10px;
         font-size: $font-size-smallest;
         line-height: 1.5;
         padding: 0 10px;
         background-color: $color-white;
+        transition: all .5s;
         
     }
 
@@ -49,26 +50,17 @@
         height: 5rem;
         align-self: center;
         border: 1px solid $color-light;
-    }
-
-    &__input::placeholder{
         font-size: $font-size-normal;
         padding-left: 1rem;
-        
+        transition: all .5s;
     }
+
 
     &__input:placeholder-shown + &__span {
-        top: -10px;
-
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(4rem);
     }
-
-    &__label:hover &__span,
-    &__input:hover &__span,
-    &__input:active &__span
-     {
-      text-decoration: dashed;
-     }
-
 
 }
   
