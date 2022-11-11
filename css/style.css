@@ -139,22 +139,28 @@ body {
     display: flex;
     justify-content: space-between;
     height: 30px; }
-    .resources-nav__button {
+    .resources-nav__item {
       color: #3e515b;
-      border: 0;
-      background-color: inherit;
       font-size: 1.4rem;
       font-weight: 700;
       line-height: 1.714;
       height: 30px; }
-    .resources-nav__button--active {
-      border-bottom: 5px solid #20a8d8; }
-    .resources-nav__button:hover, .resources-nav__button:active {
-      border-bottom: 5px solid #20a8d8;
-      transform: translateX();
-      transition: all .5s; }
-    .resources-nav__button--unebled {
-      color: #828d92; }
+      .resources-nav__item:hover, .resources-nav__item--active {
+        color: #3e515b;
+        font-size: 1.4rem;
+        font-weight: 700;
+        line-height: 1.714;
+        height: 30px;
+        border-bottom: 5px solid #20a8d8;
+        transition: all 0.5s; }
+      .resources-nav__item--unebled, .resources-nav__item--unebled:hover {
+        color: #828d92;
+        border: none;
+        transform: translateY(0); }
+    .resources-nav__button {
+      opacity: 0;
+      visibility: hidden;
+      width: 0; }
   .resources-container {
     grid-row: 3/-1;
     grid-column: 1/6;
@@ -174,6 +180,9 @@ body {
         line-height: 1.333;
         text-align: center;
         align-self: center; }
+    .resources-container__item:hover {
+      background-color: #20a8d8;
+      color: #fff; }
     .resources-container__item--active {
       background-color: #20a8d8;
       color: #fff; }
@@ -295,4 +304,5 @@ body {
     height: 20px; }
 
 .content {
-  position: fixed; }
+  position: fixed;
+  z-index: 100; }

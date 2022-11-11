@@ -100,11 +100,11 @@
 <section class="resources">
   <h2 class="resources__title">Ресурсы</h2>
   <ul class="resources-nav">
-    <li class="resources-nav__item"><button class="resources-nav__button  resources-nav__button--active">Standard Line</button></li>
-    <li class="resources-nav__item"><button class="resources-nav__button">CPU Line</button></li>
-    <li class="resources-nav__item"><button class="resources-nav__button">Memory Line</button></li>
-    <li class="resources-nav__item"><button class="resources-nav__button">Произвольная конфигурация</button></li>
-    <li class="resources-nav__item"><button class="resources-nav__button  resources-nav__button--unebled">Мои конфигурации</button></li>
+    <li class="resources-nav__item resources-nav__item--active"><input type="radio" name="resources__button" id="button-standart" class="resources-nav__button  resources-nav__button" checked><label class="resources-nav__label" for="button-standart">Standard Line</label> </li>
+    <li class="resources-nav__item"><input type="radio" name="resources__button" id="button-cpu" class="resources-nav__button"> <label class="resources-nav__label" for="button-cpu">CPU Line</label> </li>
+    <li class="resources-nav__item"><input type="radio" name="resources__button" id="button-memory" class="resources-nav__button"><label class="resources-nav__label" for="button-memory">Memory Line</label> </li>
+    <li class="resources-nav__item"><input type="radio" name="resources__button" id="button-random" class="resources-nav__button"> <label class="resources-nav__label" for="button-random">Произвольная конфигурация</label> </li>
+    <li class="resources-nav__item resources-nav__item--unebled"><input type="radio" name="resources__button" id="button-personal" class="resources-nav__button "><label class="resources-nav__label" for="button-personal">Мои конфигурации</label> </li>
   </ul>
 
   <div class="resources-container">
@@ -122,9 +122,8 @@
     <div class="resources-container__item"><span>10 CPU / 10 GB RAM</span></div>
   </div>
 </section>
-
 </main>
 
-
+<script src="js/script.js"></script>
   </body>
 </html>
