@@ -26,6 +26,9 @@ html {
 body {
     box-sizing: border-box;
     background-color: $color-primary-bg;
-
+    overflow-block: hidden;
   }
 
+  * {
+    outline: solid 1px red;
+}

@@ -1,11 +1,17 @@
 .main{
     transform: translateX(5rem) translateY(5rem); 
-    height: 85vh;
+    height: 95vh;
+    width: 95vw;
     padding-top: 20px;
     display: grid;
-    grid-template-columns:  repeat(18,80px);
-    grid-template-rows: 40px repeat(10,1fr);
+    grid-template-columns:  repeat(18,minmax(80px,100px));
+    grid-template-rows: 40px 50px repeat(10,1fr);
     z-index: -1;
+    overflow-block: hidden;
+
+    @include respond(big-desktop) {
+        grid-template-rows: 40px 70px repeat(10,1fr);
+      }
 
     &__title{
         grid-row: 2/3;

@@ -1,4 +1,9 @@
 .content{
     position: fixed;
+    height: 100vh;
+    width: 100vw;
     z-index: 100;
+    display: grid;
+    grid-template-columns: 50px 50px repeat(20,1fr);
+    grid-template-rows: 50px 50px repeat(10,1fr);
 }

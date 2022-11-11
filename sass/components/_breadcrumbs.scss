@@ -3,6 +3,9 @@
     grid-row: 1/2;
     grid-column: 2/4;
     display:flex;
+    @include respond(big-desktop) {
+        grid-column: 2/5;
+      }
 
 
     &__link{
@@ -16,8 +19,9 @@
     &__link::after{
         position: absolute;
         content: "/";
-        top: 0;
+        top: 3px;
         right:-5px;
+        
     }
 }
 
