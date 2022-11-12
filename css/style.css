@@ -270,7 +270,6 @@ body {
         grid-template-columns: repeat(2, 18rem) 6rem; } }
     @media only screen and (max-width: 37.5em) {
       .user-nav__list {
-        grid-template-columns: repeat(2, 16rem) 6rem;
         justify-content: space-between;
         padding-left: 1rem; } }
   .user-nav__item {
