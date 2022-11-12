@@ -1,19 +1,31 @@
 .main{
     transform:  translateY(5rem); 
     height: 100vh;
-    width: 100vw;
+    width: 95vw;
     padding-top: 20px;
     z-index: -1;
     grid-row: 3/-1;
     grid-column: 3/-1;
     display: grid;
-    grid-template-columns: 50px 80px repeat(18,minmax(50px,100px));
+    grid-template-columns: repeat(18,minmax(50px,100px));
     grid-template-rows: 40px 50px repeat(10,1fr);
     
+    @include respond(tab) {
+        grid-template-columns: repeat(18,minmax(30px,100px));
+        
+      }
    
 
     @include respond(tab-land) {
-        transform: translateY(5rem);
+        transform: translateY(0);
+        grid-column: 1/-1;
+        width: 100vw;
+      }
+
+      @include respond(phone) {
+        transform: translateY(40px);
+        grid-row: 4/-1;
+        grid-template-columns: 10px repeat(16,minmax(20px,100px)) 10px;
       }
 
     @include respond(big-desktop) {
@@ -23,17 +35,22 @@
 
     &__title{
         grid-row: 2/3;
-        grid-column: 3/10;
+        grid-column: 2/17;
         font-size: $font-size-largest;
         font-weight: 700;
         line-height: 1;
 
+        
     }
 
     &__discription{
         grid-row: 3/4;
-        grid-column: 3/18;
+        grid-column: 2/17;
         font-size:$font-size-normal;
         line-height: 1.333;
+        @include respond(tab-land) {
+            grid-column: 2/18;
+    
+          }
     }
 }

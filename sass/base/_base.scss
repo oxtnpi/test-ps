@@ -17,6 +17,7 @@ html {
   @include respond(tab-port) { // width < 900?
       font-size: 50%; //1 rem = 8px, 8/16 = 50%
   }
+
   
   @include respond(big-desktop) {
       font-size: 75%; //1rem = 12, 12/16
@@ -28,7 +29,11 @@ body {
     background-color: $color-primary-bg;
     display: grid;
     grid-template-columns: 100px 1fr;
-    grid-template-rows: 50px 50px 1fr;
+    grid-template-rows: 55px 55px 1fr;
+
+    @include respond(phone) {
+      grid-template-rows: 55px 55px 55px 1fr;
+    }
   }
 
   * {

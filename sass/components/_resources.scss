@@ -1,11 +1,30 @@
 .resources {
   grid-row: 6/10;
-  grid-column: 3/18;
+  grid-column: 2/17;
 
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 40px 30px repeat(6, 70px);
+  
+
+  @include respond(tab-land) {
+    
+    grid-column: 2/18;
+
+  }
+
+  @include respond(tab) {
+    
+    grid-template-columns: repeat(6, 1fr);
+
+  }
+
+  @include respond(phone) {
+    width: 95vw;
+    grid-template-rows: 4rem 10rem repeat(6, 7rem);
+    
+  }
 
   &__title {
     font-size: $font-size-large;
@@ -22,6 +41,18 @@
     display: flex;
     justify-content: space-between;
     height: 30px;
+
+    @include respond(tab) {
+    
+      grid-column: 1/7;
+  
+    }
+
+    @include respond(phone) {
+      height: 10rem;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
 
     &__item {
       color: $color-text-block;
@@ -67,6 +98,16 @@
     border-top: 1px solid $color-light;
     padding-top: 20px;
     list-style: none;
+    @include respond(tab) {
+      grid-column: 1/8;
+      grid-template-columns: repeat(1, minmax(36rem, 1fr));
+      grid-template-rows: repeat(12, 7rem);
+    }
+
+    @include respond(phone) {
+      grid-column: 1/7;
+      
+    }
 
     &__item {
       display: flex;

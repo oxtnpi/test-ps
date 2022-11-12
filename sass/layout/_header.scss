@@ -7,9 +7,14 @@
   grid-template-rows: 55px;
   grid-template-columns: repeat(10,1fr);
   background-color: $color-white;
+  @include respond(phone) {
+    height: 110px;
+    grid-template-rows: 55px 55px;
+  }
 
   &__container {
     grid-column: 1/ 7 ;
+    grid-row: 1/2;
     display: grid;
     padding: 10px;
     grid-template-columns: 40px 70px 1fr;

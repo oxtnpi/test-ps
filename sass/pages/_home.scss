@@ -7,6 +7,9 @@
     top: 0;
     z-index: 200;
 
+    @include respond(phone) {
+        grid-row: 3/4;
+      }
 
     
     @include respond(tab-land) {
