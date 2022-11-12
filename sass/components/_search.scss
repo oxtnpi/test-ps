@@ -1,6 +1,6 @@
 .search{
     grid-row: 4/4;
-    grid-column: 2/16;
+    grid-column: 3/18;
 
     display: grid;
 
@@ -27,7 +27,7 @@
     }
 
     &__label{
-        z-index: 10;
+        
         position: relative;
         display: block;
     }

@@ -1,7 +1,7 @@
 .header {
   width: 100vw;
   height: 55px;
-  z-index: 100;
+  z-index: 120;
   position: fixed;
   display: grid;
   grid-template-rows: 55px;
@@ -11,8 +11,10 @@
   &__container {
     grid-column: 1/ 7 ;
     display: grid;
-    margin: 10px;
+    padding: 10px;
     grid-template-columns: 40px 70px 1fr;
+    justify-content: center;
+    align-items: center;
   }
 
   &__title {
@@ -23,6 +25,11 @@
     line-height: 1;
     text-align: left;
     margin: 0 1rem;
+    align-self: center;
+  }
+
+  &__link{
+    display: block;
     align-self: center;
   }
 

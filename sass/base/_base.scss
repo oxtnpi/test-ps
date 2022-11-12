@@ -26,7 +26,9 @@ html {
 body {
     box-sizing: border-box;
     background-color: $color-primary-bg;
-    overflow-block: hidden;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 50px 50px 1fr;
   }
 
   * {
