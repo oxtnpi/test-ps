@@ -4,7 +4,7 @@
     grid-column: 1/2;
     position: fixed;
     transform: translateY(5.5rem);
-    padding-top:10px ;
+    padding-top:1rem ;
     z-index: 150;
     width: 5rem;
 
@@ -16,8 +16,8 @@
         grid-column: 1/-1;
         grid-row: 2/3;
         width: 100vw;
-        padding-top:5px ;
-        height: 50px;
+        padding-top:.5rem ;
+        height: 5rem;
         align-items: center;
       }
 
@@ -34,7 +34,7 @@
     justify-content: center;
     grid-template-rows: repeat(16,1fr);
     list-style: none;
-    padding: 0 10px;
+    padding: 0 1rem;
 
     @include respond(tab-land) {
         grid-template-columns: repeat(16,1fr);
@@ -45,7 +45,7 @@
 
     @include respond(phone) {
         grid-template-columns: repeat(11,1fr);
-        grid-gap: 10px;
+        grid-gap: 1rem;
       }
     
     

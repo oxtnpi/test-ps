@@ -5,7 +5,7 @@
   display: grid;
 
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 40px 30px repeat(6, 70px);
+  grid-template-rows: 4rem 3rem repeat(6, 7rem);
   
 
   @include respond(tab-land) {
@@ -40,7 +40,7 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
-    height: 30px;
+    height: 3rem;
 
     @include respond(tab) {
     
@@ -59,7 +59,7 @@
       font-size: $font-size-small;
       font-weight: 700;
       line-height: 1.714;
-      height: 30px;
+      height: 3rem;
 
 
       
@@ -91,9 +91,9 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(36rem, 1fr));
     grid-template-rows: repeat(4, 7rem);
-    grid-gap: 10px;
+    grid-gap: 1rem;
     border-top: 1px solid $color-light;
-    padding-top: 20px;
+    padding-top: 2rem;
     list-style: none;
     @include respond(tab) {
       grid-column: 1/8;

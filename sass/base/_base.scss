@@ -28,10 +28,10 @@ body {
     box-sizing: border-box;
     background-color: $color-primary-bg;
     display: grid;
-    grid-template-columns: 100px 1fr;
-    grid-template-rows: 55px 55px 1fr;
+    grid-template-columns: 10rem 1fr;
+    grid-template-rows: 5.5rem 5.5rem 1fr;
 
     @include respond(phone) {
-      grid-template-rows: 55px 55px 55px 1fr;
+      grid-template-rows: 5.5rem 5.5rem 5.5rem 1fr;
     }
   }
