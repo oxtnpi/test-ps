@@ -33,9 +33,6 @@ body {
     body {
       grid-template-rows: 55px 55px 55px 1fr; } }
 
-* {
-  outline: solid 1px red; }
-
 body {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
