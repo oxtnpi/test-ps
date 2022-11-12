@@ -527,8 +527,8 @@ body {
   height: 100vh;
   width: 100px;
   display: grid;
-  grid-template-columns: 50px;
-  grid-template-rows: 50px repeat(10, 1fr);
+  grid-template-columns: 5rem;
+  grid-template-rows: 5rem repeat(10, 1fr);
   top: 0;
   z-index: 200; }
   @media only screen and (max-width: 37.5em) {
@@ -536,7 +536,7 @@ body {
       grid-row: 3/4; } }
   @media only screen and (max-width: 75em) {
     .content {
-      grid-template-columns: 50px 50px repeat(20, 1fr);
-      grid-template-rows: 50px 50px;
+      grid-template-columns: 5rem 5rem repeat(20, 1fr);
+      grid-template-rows: 5rem 5rem;
       width: 100vw;
       height: 100px; } }
