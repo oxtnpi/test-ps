@@ -8,6 +8,10 @@
     z-index: 150;
     width: 5rem;
 
+    @include respond(big-desktop) {
+        transform: translateY(4.5rem);
+    }
+
     @include respond(tab-land) {
         grid-column: 1/-1;
         grid-row: 2/3;

@@ -61,13 +61,10 @@
       line-height: 1.714;
       height: 30px;
 
+
+      
       
       &--active {
-        color: $color-text-block;
-        font-size: $font-size-small;
-        font-weight: 700;
-        line-height: 1.714;
-        height: 30px;
         border-bottom: 5px solid $color-active;
         transition: all 0.5s;
       }
@@ -120,6 +117,7 @@
     &__item:hover {
       background-color: $color-active;
       color: $color-white;
+      transition: all .3s ease-in;
     }
 
     &__item--active {

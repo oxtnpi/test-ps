@@ -60,7 +60,7 @@
         line-height: 1.5;
         padding: 0 10px;
         background-color: $color-white;
-        transition: all .5s;
+        transition: all  .5s;
         
     }
 
@@ -71,7 +71,7 @@
         border: 1px solid $color-light;
         font-size: $font-size-normal;
         padding-left: 1rem;
-        transition: all .5s;
+        transition: all .3s;
 
         @include respond(phone) {
             width: 85vw;

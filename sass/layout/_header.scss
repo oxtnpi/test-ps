@@ -20,6 +20,22 @@
     grid-template-columns: 40px 70px 1fr;
     justify-content: center;
     align-items: center;
+
+    @include respond(tab-land) {
+      grid-template-columns: 40px 3fr 1fr;
+    }
+
+    @include respond(tab-port) {
+      grid-column: 1/ 5 ;
+    }
+
+    @include respond(tab) {
+      grid-template-columns: 40px 3fr 10px;
+    }
+
+    @include respond(phone) {
+      grid-column: 1/-1;
+    }
   }
 
   &__title {
@@ -31,6 +47,10 @@
     text-align: left;
     margin: 0 1rem;
     align-self: center;
+    @include respond(tab-land) {
+      font-size: $font-size-normal;
+    }
+    
   }
 
   &__link{
